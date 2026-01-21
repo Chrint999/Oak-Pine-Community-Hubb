@@ -19,7 +19,7 @@
       --text-muted:#a8c5a8;
       --accent:#5cb85c;
       --accent-gold:#d4af37;
-      --teal:#22b8b5; /* “corner” color from the inspiration */
+      --teal:#22b8b5;
       --danger:#ee6352;
 
 
@@ -83,7 +83,7 @@
     .back-link:hover{ color: var(--accent); }
 
 
-    /* ===== Contact layout (blend of both inspirations) ===== */
+    /* ===== Contact layout ===== */
     .contact-shell{
       position: relative;
       background: linear-gradient(145deg, rgba(40,54,40,0.92), rgba(27,38,27,0.92));
@@ -95,7 +95,7 @@
     }
 
 
-    /* Decorative circles like the first pic, but dark/nature */
+    /* circles */
     .contact-shell::before,
     .contact-shell::after{
       content:"";
@@ -127,7 +127,7 @@
     }
 
 
-    /* Left info panel like second pic (solid block) but Oak Pine colors */
+    
     .contact-info{
       padding: 34px 30px;
       background: linear-gradient(160deg, rgba(34,184,181,0.28), rgba(40,54,40,0.0));
@@ -137,7 +137,7 @@
     }
 
 
-    /* Teal “corner” wedge vibe */
+    /* Teal wedge vibe */
     .contact-info .wedge{
       position:absolute;
       top: -140px;
@@ -579,7 +579,7 @@
 
 
   <script>
-    // Demo submit behavior (no backend needed)
+    
     const form = document.getElementById("caseWorkerForm");
     const toast = document.getElementById("toast");
 
@@ -588,7 +588,7 @@
       e.preventDefault();
 
 
-      // basic check (browser already enforces required, but keeping it safe)
+     
       if (!form.checkValidity()) return;
 
 
@@ -596,7 +596,6 @@
       setTimeout(() => toast.classList.remove("show"), 3500);
 
 
-      // Optional: clear after submit
       form.reset();
     });
   </script>
@@ -608,4 +607,5 @@
     });
   </script>
 </body>
+
 </html>
