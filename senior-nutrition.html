@@ -484,6 +484,16 @@
       nav ul{gap: 14px;}
       .hero-title{font-size: 2rem;}
     }
+    .back-link{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      color: var(--accent-gold);
+      text-decoration:none;
+      font-weight:700;
+      margin-bottom: 14px;
+    }
+    .back-link:hover{ color: var(--accent); }
   </style>
 </head>
 <body>
@@ -581,7 +591,12 @@
 
 
   <main class="container section-pad">
-    <h2 class="section-title">Pickup Locations</h2>
+
+  <a class="back-link" href="index.html">
+    <i class="fa-solid fa-arrow-left"></i> Back to Home
+  </a>
+
+  <h2 class="section-title">Pickup Locations</h2>
 
 
     <div class="grid" id="seniorGrid">
